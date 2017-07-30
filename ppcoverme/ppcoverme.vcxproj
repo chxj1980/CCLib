@@ -44,7 +44,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -181,24 +181,40 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioUtil.h" />
+    <ClInclude Include="BinaryFile.h" />
+    <ClInclude Include="BinaryUtil.h" />
     <ClInclude Include="ChildView.h" />
     <ClInclude Include="CSpreadSheet.h" />
+    <ClInclude Include="FileLog.h" />
     <ClInclude Include="filemanager.h" />
     <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="NetUtil.h" />
+    <ClInclude Include="Pdf.h" />
     <ClInclude Include="ppcoverme.h" />
+    <ClInclude Include="ProcessUtil.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="ScreenUtil.h" />
+    <ClInclude Include="Splash.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="strutil.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AudioUtil.cpp" />
+    <ClCompile Include="BinaryFile.cpp" />
+    <ClCompile Include="BinaryUtil.cpp" />
     <ClCompile Include="ChildView.cpp" />
     <ClCompile Include="CSpreadSheet.cpp" />
+    <ClCompile Include="FileLog.cpp" />
     <ClCompile Include="filemanager.cpp" />
     <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="NetUtil.cpp" />
+    <ClCompile Include="Pdf.cpp" />
     <ClCompile Include="ppcoverme.cpp" />
+    <ClCompile Include="ProcessUtil.cpp" />
     <ClCompile Include="ScreenUtil.cpp" />
+    <ClCompile Include="Splash.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -220,4 +236,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ppcoverme.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

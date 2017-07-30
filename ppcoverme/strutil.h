@@ -27,4 +27,7 @@ const wchar_t* CharToWChar(const char* p);
 //char* to LPWSTR
 LPWSTR CharToLpwStr(char* p);
 
+//const char* To LPCWSTR
+LPCWSTR CharToLpcwStr(const char* p);
+
 #endif // inc

@@ -51,6 +51,30 @@
     <ClInclude Include="ScreenUtil.h">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="NetUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLog.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryFile.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Pdf.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Splash.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ppcoverme.cpp">
@@ -75,6 +99,30 @@
       <Filter>Common</Filter>
     </ClCompile>
     <ClCompile Include="ScreenUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLog.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryFile.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Pdf.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Splash.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessUtil.cpp">
       <Filter>Common</Filter>
     </ClCompile>
   </ItemGroup>

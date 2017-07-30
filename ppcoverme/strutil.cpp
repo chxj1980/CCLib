@@ -162,3 +162,11 @@ LPWSTR CharToLpwStr(char* p)
 	//item.pszText = aaa;
 	return CA2W(p);
 }
+
+//const char* To LPCWSTR
+LPCWSTR CharToLpcwStr(const char* p)
+{
+	wchar_t temp[155];
+	MultiByteToWideChar(CP_ACP, NULL, p, 155, temp, 155);
+	return temp;
+}

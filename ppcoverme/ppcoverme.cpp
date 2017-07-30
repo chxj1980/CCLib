@@ -7,6 +7,7 @@
 #include "afxdialogex.h"
 #include "ppcoverme.h"
 #include "MainFrm.h"
+#include "Splash.h"
 
 
 #ifdef _DEBUG
@@ -62,8 +63,6 @@ BOOL CppcovermeApp::InitInstance()
 	InitCommonControlsEx(&InitCtrls);
 
 	CWinApp::InitInstance();
-
-
 	// Initialize OLE libraries
 	if (!AfxOleInit())
 	{
@@ -72,12 +71,9 @@ BOOL CppcovermeApp::InitInstance()
 	}
 
 	AfxEnableControlContainer();
-
 	EnableTaskbarInteraction(FALSE);
-
 	// AfxInitRichEdit2() is required to use RichEdit control	
 	// AfxInitRichEdit2();
-
 	// Standard initialization
 	// If you are not using these features and wish to reduce the size
 	// of your final executable, you should remove from the following
@@ -99,9 +95,12 @@ BOOL CppcovermeApp::InitInstance()
 		WS_OVERLAPPEDWINDOW | FWS_ADDTOTITLE, NULL,
 		NULL);
 
-
-
-
+	//¼ÓÔØSplansh´°Ìå
+	TCHAR szStr1[] = TEXT("F:\\androidsource\\VC³ÌÐò\\CSplash_src\\splash.bmp");
+	CSplash splash1(szStr1, RGB(128, 128, 128));
+	splash1.ShowSplash();
+	Sleep(3000); //  simulate using a 5 second delay
+	splash1.CloseSplash();//  Close the splash screen
 
 	// The one and only window has been initialized, so show and update it
 	pFrame->ShowWindow(SW_SHOW);
